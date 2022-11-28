@@ -1,4 +1,4 @@
-# FR
+# FR: Frequency Regularization
 
 Code for paper "Frequency Regularization for Improving Adversarial Robustness" accepted by Practical-DL Workshop @AAAI 2023.
 
