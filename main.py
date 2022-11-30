@@ -284,8 +284,8 @@ def main():
 
         # check the accuracy of the test set during the training
         if args.eval_test:
-            test_clean_acc1 = eval_clean(test_loader, swa_model, normalize)
-            test_pgd_acc1 = eval_pgd(test_loader, swa_model, normalize, args.test_epsilon, args.test_alpha,
+            test_clean_acc1 = eval_clean(test_loader, model, normalize)
+            test_pgd_acc1 = eval_pgd(test_loader, model, normalize, args.test_epsilon, args.test_alpha,
                                 args.test_iters, args.restarts)
             logging.info('Test accuracy: \t %.4f, Test robustness: \t %.4f', test_clean_acc1,
                          test_pgd_acc1)
