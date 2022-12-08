@@ -63,6 +63,7 @@ parser.add_argument('--swa_c_epochs', type=int, default=1, metavar='N', help='SW
 # checkpoint
 parser.add_argument('--resume', action='store_true', help='load state dict from the checkpoint')
 parser.add_argument('--ckpt_path', type=str, default='./ckpt/', help='checkpoint path')
+parser.add_argument('--ckpt_exact', type=str, default='./ckpt/resnet/0/best_model_0.pt', help='path of one exact checkpoint')
 
 # others
 parser.add_argument('--model', default='resnet', choices=['resnet', 'wrn', 'preresnet', 'resnet_ff'],
@@ -173,7 +174,7 @@ optimizer = optim.SGD(params, lr=args.lr, momentum=args.momentum, weight_decay=a
 epochs = 0
 # load checkpoint
 if args.resume:
-    state = torch.load(args.ckpt_path)
+    state = torch.load(args.ckpt_exact)
     epochs = state['epoch'] + 1
     ckpt = state["state_dict"]
     # optimizer.load_state_dict(state["optimizer"])
