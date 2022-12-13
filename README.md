@@ -1,6 +1,6 @@
 # FR: Frequency Regularization
 
-Code for paper "Frequency Regularization for Improving Adversarial Robustness" accepted by Practical-DL Workshop @AAAI 2023. [[PDF]"./pdf/AAAI2023_Workshop.pdf"]
+Code for paper "Frequency Regularization for Improving Adversarial Robustness" accepted by Practical-DL Workshop @AAAI 2023.  [[PDF](\files\pdf\AAAI2023_Workshop.pdf)]
 
 # Introduction
 
@@ -51,7 +51,7 @@ Top-1 robust accuracy(\%) of the WideResNet-34-10 model on the CIFAR-10.
 | AT-FR-SWA(ours)           | 81.09         | 62.49         | **60.12**          | **56.14**         | **54.35**          |
 
 
-<div align="center">
+<div align="left">
 <img src="./imgs/ablation.png" height="250sx" title="Ablation study">
 </div>
 
