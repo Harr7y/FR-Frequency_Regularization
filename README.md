@@ -50,7 +50,7 @@ Top-1 robust accuracy(\%) of the WideResNet-34-10 model on the CIFAR-10.
 | AT-FR(ours)               | 80.59         | 61.47         | 59.49            | 54.33           | 52.06           |
 | AT-FR-SWA(ours)           | 81.09         | 62.49         | **60.12**          | **56.14**         | **54.35**          |
 
-
+**Left**: Standard accuracy (dashed line) and robust accuracy (solid line) on validation and test sets over epochs for AT-trained WideResNet-34-10 on CIFAR-10. FR denotes frequency regularization, SA and RA denote the standard and robust accuracies; **Right**: Ablation studies to demonstrate the effect of FR and SWA on model performance.
 <div align="left">
 <img src="./imgs/ablation.png" height="250sx" title="Ablation study">
 </div>
